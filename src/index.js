@@ -13,3 +13,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function renderOneToy(toy) {
+  let card = document.createElement('li')
+  card.className = 'card'
+  card.innerHTML = 
+    <img src="${toy.imageUrl}" class="toy-avatar">
+    <div class="content">+
+      <h2>${toy.name}</h2>
+        <p>
+          <span class="likes">${toys.likes}</span>
+        </p>
+  </div>
+  <div class="buttons">
+    <button> Like Btn </button>
+  </div>
+
+document.querySelector('#toy-collection').appendChild(card)
+
+function initialize();
